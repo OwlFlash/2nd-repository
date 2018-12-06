@@ -106,45 +106,62 @@
     background: url(./public/sun/cloud.jpg) center no-repeat;
     background-size: cover;
 }
-html {
-    height: 100%;
-}
-body {
-    min-height: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
-header {
-    height: 50px;
-    background: lightcyan;
-}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
 footer {
-    background: PapayaWhip;
-}
-body {
-    position: relative;
-}
-body::after {
-    content: '';
-    display: block;
-    height: 50px;
-}
-footer {
-    position: absolute;
+    background-image: url(public/footer/img.jpg);
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 50px;
-    text-align: center;
+    height: 12%;
 }
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-     border-radius: 100%;
-}
-#contact {
+
+#footer_container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding-top: 20;
     height: 100px;
+
+}
+
+.media {
+    list-style-type: none;
+}
+
+.media li a {
+    font-family: 'Open Sans Condensed', cursive;
+    font-size: 24px;
+    display: inline;
+    float: right;
+    padding: 10px;
+    color: #334455;
+    text-decoration: none;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.media li a:hover {
+    color: #e3e3;
+}
+
+.copyright_text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-top: 20;
+    line-height: 1.5em;
+    float: left;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.5em;
+    color: #ffffee;
+
+}
+
+.fa {
+    color: #ffffee;
+    position: relative;
+    bottom: 0;
 }
