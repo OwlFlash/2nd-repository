@@ -130,13 +130,14 @@ footer {
 }
 
 .media li a {
-    font-family: 'Open Sans Condensed', cursive;
-    font-size: 24px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
     display: inline;
     float: right;
     padding: 10px;
     color: #334455;
     text-decoration: none;
+    text-transform: uppercase;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -158,10 +159,4 @@ footer {
     font-size: 0.5em;
     color: #ffffee;
 
-}
-
-.fa {
-    color: #ffffee;
-    position: relative;
-    bottom: 0;
 }
