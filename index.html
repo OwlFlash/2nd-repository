@@ -8,30 +8,198 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+    <title>Weather.io</title>
 </head>
-<body>
-<h3></h3>
-<header>Header</header>
-<article>Content
+<body onload="getLocation();">
+    <content>
+        <div class="header">
+            <div class="header-logo">
+                <img src="public/logo/sun-energy64pxy.png" />
+            </div>
+            <div class="header-name">Weather.io</div>
+            <div class="header-help">
+                <i id="help-icon" class="far fa-question-circle"></i>
+                <div class="header-help-text">Site uses autolocalization and shows the weather forecast for couple of days</div>
+            </div>
+        </div>
+    <h3></h3>
+    <div class="days-container">
+            <div class="days">
+                <div class="day">
+                    <div class= "day-name-container">
+                        <div class="day-name">Monday</div>
+                    </div>
+                    <div class="daybox">
+                        <div class="day-icon-container">
+                            <div class="day-icon"></div>
+                        </div>
+                        
+                        <div class="day-temperature">
+                            <div class="celsius">5 C</div>
+                            <div class="fahrenheit">41 F </div>
+                        </div>
+                        <div class=" day-details-container">
+                            <div class="day-details-description-container">
+                                    <div class="day-details-description">Cloudy</div>
+                            </div>   
+                            <div class="day-details-small-container"> 
+                                <div class="day-details">
+                                
+                                    <ul >
+                                        <li>Wind <span>7 km/h</span></li>
+                                        <li>Humidity<span>88%</span></li>
+                                        <li>Pressure<span>102.9 kPa</span></li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                        
 
-   
+                   
+                </div>
+                
+                    
+                
+                <div class="day">
+                    <div class= "day-name-container">
+                        <div class="day-name">Tuesday</div>
+                    </div>
+                    <div class="daybox">
+                        <div class="day-icon-container">
+                            <div class="day-icon"></div>
+                        </div>
+                        
+                        <div class="day-temperature">
+                            <div class="celsius">5 C</div>
+                            <div class="fahrenheit">41 F </div>
+                        </div>
+                        <div class=" day-details-container">
+                            <div class="day-details-description-container">
+                                    <div class="day-details-description">Cloudy</div>
+                            </div>   
+                            <div class="day-details-small-container"> 
+                                <div class="day-details">
+                                
+                                    <ul >
+                                        <li>Wind <span>7 km/h</span></li>
+                                        <li>Humidity<span>88%</span></li>
+                                        <li>Pressure<span>102.9 kPa</span></li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="day">
+                    <div class= "day-name-container">
+                        <div class="day-name">  Wednesday</div>
+                    </div>
+                    <div class="daybox">
+                        <div class="day-icon-container">
+                            <div class="day-icon"></div>
+                        </div>
+                        
+                        <div class="day-temperature">
+                            <div class="celsius">5 C</div>
+                            <div class="fahrenheit">41 F </div>
+                        </div>
+                        <div class=" day-details-container">
+                            <div class="day-details-description-container">
+                                    <div class="day-details-description">Cloudy</div>
+                            </div>   
+                            <div class="day-details-small-container"> 
+                                <div class="day-details">
+                                
+                                    <ul >
+                                        <li>Wind <span>7 km/h</span></li>
+                                        <li>Humidity<span>88%</span></li>
+                                        <li>Pressure<span>102.9 kPa</span></li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="day">
+                    <div class= "day-name-container">
+                        <div class="day-name">Thursday</div>
+                    </div>
+                    <div class="daybox">
+                        <div class="day-icon-container">
+                            <div class="day-icon"></div>
+                        </div>
+                        
+                        <div class="day-temperature">
+                            <div class="celsius">5 C</div>
+                            <div class="fahrenheit">41 F </div>
+                        </div>
+                        <div class=" day-details-container">
+                            <div class="day-details-description-container">
+                                    <div class="day-details-description">Cloudy</div>
+                            </div>   
+                            <div class="day-details-small-container"> 
+                                <div class="day-details">
+                                
+                                    <ul >
+                                        <li>Wind <span>7 km/h</span></li>
+                                        <li>Humidity<span>88%</span></li>
+                                        <li>Pressure<span>102.9 kPa</span></li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
 
-</article>
-<footer>
-<div id="footer_container">
-    <p class="copyright_text">
-        &copy; Copyright by CodersCrew &nbsp;
-            <i class="fa fa-envelope-o">j.kowalski@gmail.com</i>
-        </p>
-    
-    <ul class="media">
-        <li><a href="https://facebook.com" target="_blank">facebook</a></li>
-        <li><a href="https://twitter.com" target="_blank">twitter</a></li>
-        <li><a href="https://instagram.com" target="_blank">instagram</a></li>
-        <li><a href="https://github.com" target="blank">github</a></li>
-    </ul>
-</div>
-</footer>
-<script src="index.js"></script>
+                    
+                </div>
+                <div class="day">
+                    <div class= "day-name-container">
+                        <div class="day-name">Friday</div>
+                    </div>
+                    <div class="daybox">
+                        <div class="day-icon-container">
+                            <div class="day-icon"></div>
+                        </div>
+                        
+                        <div class="day-temperature">
+                            <div class="celsius">5 C</div>
+                            <div class="fahrenheit">41 F </div>
+                        </div>
+                        <div class=" day-details-container">
+                            <div class="day-details-description-container">
+                                    <div class="day-details-description">Cloudy</div>
+                            </div>   
+                            <div class="day-details-small-container"> 
+                                <div class="day-details">
+                                
+                                    <ul >
+                                        <li>Wind <span>7 km/h</span></li>
+                                        <li>Humidity<span>88%</span></li>
+                                        <li>Pressure<span>102.9 kPa</span></li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+ 
+    </content>
+    <script src="index.js"></script>
 </body>
 </html>
