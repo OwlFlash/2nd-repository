@@ -343,3 +343,108 @@ li{
     color: white;
 }
 
+.app {
+    overflow: hidden;
+    height:200px;
+    width: 200px;
+}
+
+.headertest {
+    
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+}
+
+.headertest .city {
+    position: absolute;
+    width: 100%;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.headertest .city i.fa {
+    position: relative;
+
+}
+
+.headertest .weathertest {
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 350px;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 72px;
+    text-shadow: 1px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.headertest .temptest {
+    position: absolute;
+    font-size: 36px;
+    font-weight: 100;
+    margin-left: -80px;
+    text-shadow: none;
+
+}
+
+.headertest .temptest .unittest {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    font-weight: 100;
+    margin-right: -10px;
+}
+
+.headertest .weathertest > .wi {
+    position: relative;
+    top: -25px;
+}
+
+.headertest .weathertest .wind-scale {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 200;
+    right: 0;
+    margin-right: 350px;
+    margin-top: -30px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+.headertest .weathertest .wind .wi,
+.headertest .weathertest .wind-scale .wi {
+    position: relative;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.headertest .weathertest .day {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 50;
+    text-transform: uppercase;
+    
+}
+
+.headertest .weathertest .timetest {
+ position: absolute;
+ font-size: 15px;
+ bottom: 5px;
+ left: 0;
+ margin-left: 10px;
+ text-shadow: none;
+ opacity: 0.6;
+}
+
+.headertest:before,
+.headertest:after {
+    position: absolute;
+}
