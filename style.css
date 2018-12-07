@@ -189,72 +189,54 @@ body {
 }
 
 
-.days-container{
-    
+.days-container{ 
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     height: 50vh;
-    /* background-color: rgb(255, 207, 152);
-     */
-     background-color:#fff7f9;
-     /* background-color: rgb(192, 215, 226); */
+    background-color:#fff7f9; 
 }
 
 .days{
-    
     width:70%;
     height:80%;
     display:flex;
     min-width: 700px;
-    max-width: 1000px;
-   
-    
+    max-width: 1000px; 
 }
-
+.days > div{
+    font-family:'Gamja Flower', cursive;
+}
 .days > .day{
     width: 20%;
-    
     height: 100%;
 } 
 
 .day-name-container{
     width: 100%;
     height: 15%;
-    
     text-align: center;
 }
 
 .day-icon-container{
     width: 100%;
-    height: 40%;
-    
+    height: 40%;   
 }
-/* .day-icon-img{
-    background-image: url(../images/cloudy.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
-/* .day-icon{
-    background-image: url(../my-icons-collection/png/001-cloud.png)
-} */
+
 .day-temperature{
     width: 100%;
-    height: 10%;
-    
+    height: 10%;   
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-size: 1.5em;
+    color:black;
 }
 .day-temperature .celsius,.fahrenheit{
     width: 25%;
     height: 80%;
     min-width: 50px;
-    
-   
-
 }
 
 
@@ -271,8 +253,7 @@ body {
 }
 .day-details-description{
     font-size: 1.4em;
-    font-family: 'Gamja Flower', cursive;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    color:black;    
     text-align: center;
     padding-top: 5%;
     height: 100%;
@@ -297,22 +278,16 @@ body {
     width: 90%
 }
 .day-name {
-    font-size: 1.9em;
-    font-family: 'Gamja Flower', cursive;
+    font-size: 1.6em;
     color: lightsalmon;
     padding-top: 5%;
     height: 100%;
     box-sizing: border-box;
-    
-}
-.day-temperature{
-    font-size: 1.6em;
-    font-family: 'Gamja Flower', cursive;
 }
 li{
     margin: 5px 0;
-     font-family: 'Gamja Flower', cursive;
-    font-size: 1.25em;  
+    color:black;
+    font-size: 1em;  
 }
 .day-details ul li span{
     float:right;
