@@ -26,3 +26,20 @@ icon_help.addEventListener('click', () => {
 document.querySelector(".header-help-text").classList.toggle("show-header-help-text");
     
 });
+
+// Obiekt trzymajacy koordynaty
+const userCoordinates = {
+    latitude: 0,
+    longitude: 0
+};
+
+// Sciaganie geolokacji
+
+function getLocation() {
+    navigator.geolocation.getCurrentPosition(showPosition);
+};
+
+function showPosition(position) {
+    userCoordinates.latitude = position.coords.latitude;
+    userCoordinates.longitude = position.coords.longitude
+}
