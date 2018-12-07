@@ -19,3 +19,10 @@ if(weather == "rain") {
 } else if(weather == "snow") {
     snow();
 } 
+
+// Obsluga ikonki help
+const icon_help = document.getElementById('help-icon');
+icon_help.addEventListener('click', () => {
+document.querySelector(".header-help-text").classList.toggle("show-header-help-text");
+    
+});
