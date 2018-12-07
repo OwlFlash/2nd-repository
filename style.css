@@ -187,3 +187,115 @@ body {
     background: url(./public/sun/cloud.jpg) center no-repeat;
     background-size: cover;
 }
+
+
+.days-container{ 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color:#fff7f9; 
+}
+
+.days{
+    width:70%;
+    height:80%;
+    display:flex;
+    min-width: 700px;
+    max-width: 1000px; 
+}
+.days > div{
+    font-family:'Gamja Flower', cursive;
+}
+.days > .day{
+    width: 20%;
+    height: 100%;
+} 
+
+.day-name-container{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+}
+
+.day-icon-container{
+    width: 100%;
+    height: 40%;   
+}
+
+.day-temperature{
+    width: 100%;
+    height: 10%;   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5em;
+    color:black;
+}
+.day-temperature .celsius,.fahrenheit{
+    width: 25%;
+    height: 80%;
+    min-width: 50px;
+}
+
+
+
+.day-details-container{
+    height: 50%;
+    width: 100%;
+    padding-bottom: 10%;
+    box-sizing: border-box;
+}
+.day-details-description-container{
+    width: 100%;
+    height: 30%;
+}
+.day-details-description{
+    font-size: 1.4em;
+    color:black;    
+    text-align: center;
+    padding-top: 5%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.day-details-small-container{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.day-details{
+    height: 100%;
+    width: 90%;
+    display: flex;
+}
+.day-details ul{
+    justify-content: flex-start;
+    padding: 0;
+    list-style-type:none;
+    width: 90%
+}
+.day-name {
+    font-size: 1.6em;
+    color: lightsalmon;
+    padding-top: 5%;
+    height: 100%;
+    box-sizing: border-box;
+}
+li{
+    margin: 5px 0;
+    color:black;
+    font-size: 1em;  
+}
+.day-details ul li span{
+    float:right;
+}
+.daybox{
+    height:85%;
+    border-left: solid 1.5px #bd8a7c;
+}
+.days :nth-child(1) :nth-child(2){
+    border:none;
+}
