@@ -343,3 +343,108 @@ li{
     color: white;
 }
 
+.app {
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+
+.headerblue {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+}
+
+.headerblue .city {
+    position: absolute;
+    width: 100%;
+    margin-top: -0.5em;
+    display: block;
+    font-size: 5vh;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.headerblue .city i.fa {
+    position: relative;
+
+}
+
+.headerblue .weatherblue {
+    position: absolute;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 6px;
+    text-shadow: 1px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.headerblue .tempblue {
+     position: absolute;
+     font-size: 0.4em;
+     font-weight: 30;
+     text-transform: uppercase;
+     margin-left: 6em;
+     margin-top: 1em;
+}
+
+.headerblue .tempblue .unitblue {
+    position: absolute;
+    font-size: 0.5em;
+    font-weight: 30;
+    text-transform: uppercase;
+    margin-left: 0.2em;
+}
+
+.headerblue .weatherblue >.wi {
+    position: relative;
+    top: -25px;
+}
+
+.headerblue .weatherblue .wind-scale {
+    position: absolute;
+    font-size: 40px;
+    font-weight: 200; 
+    margin-left: -12em;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+.headerblue .weatherblue .wind .wi,
+.headerblue .weatherblue .wind-scale .wi {
+    position: relative;
+    font-size: 48px;
+    margin-left: 0.2em;
+}
+
+.headerblue .weatherblue .day {
+    position: absolute;
+    font-size: 0.3em;
+    font-weight: 200;
+    margin-left: 2.5em;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+    
+}
+
+.headerblue .weatherblue {
+ position: absolute;
+ font-size: 12em;
+ left: 0;
+ top: 0;
+ margin-left: -1vh;
+ margin-top: 25vh;
+ bottom: 5px;
+ text-shadow: none;
+ opacity: 1;
+}
+
+.headerblue:before,
+.headerblue:after {
+    position: absolute;
+}
