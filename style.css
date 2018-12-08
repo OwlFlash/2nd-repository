@@ -345,11 +345,11 @@ li{
 
 .app {
     overflow: hidden;
-    height:200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
 }
 
-.headertest {
+.headerblue {
     
     width: 100%;
     height: 450px;
@@ -358,7 +358,7 @@ li{
     display: inline-block;
 }
 
-.headertest .city {
+.headerblue .city {
     position: absolute;
     width: 100%;
     display: block;
@@ -368,32 +368,33 @@ li{
     letter-spacing: 2px;
 }
 
-.headertest .city i.fa {
+.headerblue .city i.fa {
     position: relative;
 
 }
 
-.headertest .weathertest {
+.headerblue .weatherblue {
     position: absolute;
     width: 100%;
     display: block;
     height: 350px;
     text-align: center;
-    margin-top: 70px;
-    font-size: 72px;
+    margin-top: 80px;
+    font-size: 76px;
     text-shadow: 1px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-.headertest .temptest {
+.headerblue .tempblue {
     position: absolute;
     font-size: 36px;
     font-weight: 100;
-    margin-left: -80px;
+    margin-left: -70px;
+    margin-top: 10px;
     text-shadow: none;
 
 }
 
-.headertest .temptest .unittest {
+.headerblue .tempblue .unitblue {
     position: absolute;
     top: 0;
     right: 0;
@@ -402,39 +403,41 @@ li{
     margin-right: -10px;
 }
 
-.headertest .weathertest > .wi {
+.headerblue .weatherblue >.wi {
     position: relative;
     top: -25px;
 }
 
-.headertest .weathertest .wind-scale {
+.headerblue .weatherblue .wind-scale {
     position: absolute;
     font-size: 18px;
     font-weight: 200;
     right: 0;
-    margin-right: 350px;
+    margin-right: 450px;
     margin-top: -30px;
     text-align: center;
     text-shadow: none;
     text-transform: uppercase;
 }
 
-.headertest .weathertest .wind .wi,
-.headertest .weathertest .wind-scale .wi {
+.headerblue .weatherblue .wind .wi,
+.headerblue .weatherblue .wind-scale .wi {
     position: relative;
     font-size: 18px;
     margin-left: 15px;
 }
 
-.headertest .weathertest .day {
+.headerblue .weatherblue .day {
     position: absolute;
-    font-size: 14px;
-    font-weight: 50;
+    font-size: 28px;
+    font-weight: 30;
     text-transform: uppercase;
-    
+    left: 0;
+    margin-left: 530px;
+    margin-top: -30px;
 }
 
-.headertest .weathertest .timetest {
+.headerblue .weatherblue .timeblue {
  position: absolute;
  font-size: 15px;
  bottom: 5px;
@@ -444,7 +447,7 @@ li{
  opacity: 0.6;
 }
 
-.headertest:before,
-.headertest:after {
+.headerblue:before,
+.headerblue:after {
     position: absolute;
 }
