@@ -345,8 +345,8 @@ li{
 
 .app {
     overflow: hidden;
-    height: 180px;
-    width: 180px;
+    height: 5px;
+    width: 5px;
 }
 
 .headerblue {
@@ -362,7 +362,9 @@ li{
     position: absolute;
     width: 100%;
     display: block;
-    font-size: 1.2em;
+    margin-top: -330px;
+    margin-left: -400px;
+    font-size: 2em;
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -379,17 +381,16 @@ li{
     display: block;
     height: 350px;
     text-align: center;
-    margin-top: 80px;
-    font-size: 76px;
+    font-size: 26px;
     text-shadow: 1px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .headerblue .tempblue {
     position: absolute;
-    font-size: 36px;
+    font-size: 66px;
     font-weight: 100;
-    margin-left: -70px;
-    margin-top: 10px;
+    margin-left: 250px;
+    margin-top: 80px;
     text-shadow: none;
 
 }
@@ -398,9 +399,13 @@ li{
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 100;
-    margin-right: -10px;
+    margin-top: 10px;
+    margin-right: -20px;
+    
+    
+    
 }
 
 .headerblue .weatherblue >.wi {
@@ -410,11 +415,9 @@ li{
 
 .headerblue .weatherblue .wind-scale {
     position: absolute;
-    font-size: 18px;
-    font-weight: 200;
-    right: 0;
-    margin-right: 450px;
-    margin-top: -30px;
+    font-size: 20px;
+    font-weight: 200; 
+    margin-left: 400px;
     text-align: center;
     text-shadow: none;
     text-transform: uppercase;
@@ -423,28 +426,30 @@ li{
 .headerblue .weatherblue .wind .wi,
 .headerblue .weatherblue .wind-scale .wi {
     position: relative;
-    font-size: 18px;
+    font-size: 48px;
     margin-left: 15px;
 }
 
 .headerblue .weatherblue .day {
     position: absolute;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: 30;
     text-transform: uppercase;
-    left: 0;
-    margin-left: 530px;
-    margin-top: -30px;
+    margin-left: 20px;
+    margin-top: 50px;
+    
 }
 
-.headerblue .weatherblue .timeblue {
+.headerblue .weatherblue {
  position: absolute;
- font-size: 15px;
- bottom: 5px;
+ font-size: 150px;
  left: 0;
- margin-left: 10px;
+ top: 0;
+ margin-left: -450px;
+ margin-top: 200px;
+ bottom: 5px;
  text-shadow: none;
- opacity: 0.6;
+ opacity: 1;
 }
 
 .headerblue:before,
