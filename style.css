@@ -345,12 +345,11 @@ li{
 
 .app {
     overflow: hidden;
-    height: 5px;
-    width: 5px;
+    height: 1px;
+    width: 1px;
 }
 
 .headerblue {
-    
     width: 100%;
     height: 450px;
     overflow: hidden;
@@ -362,9 +361,7 @@ li{
     position: absolute;
     width: 100%;
     display: block;
-    margin-top: -330px;
-    margin-left: -400px;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -379,19 +376,19 @@ li{
     position: absolute;
     width: 100%;
     display: block;
-    height: 350px;
     text-align: center;
-    font-size: 26px;
+    font-size: 6px;
     text-shadow: 1px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .headerblue .tempblue {
     position: absolute;
-    font-size: 66px;
+    font-size: 0.5em;
     font-weight: 100;
-    margin-left: 250px;
-    margin-top: 80px;
     text-shadow: none;
+    right: 50%;
+    margin-right: -3em;
+    margin-top: 1em;
 
 }
 
@@ -403,6 +400,7 @@ li{
     font-weight: 100;
     margin-top: 10px;
     margin-right: -20px;
+    
     
     
     
@@ -427,26 +425,26 @@ li{
 .headerblue .weatherblue .wind-scale .wi {
     position: relative;
     font-size: 48px;
-    margin-left: 15px;
+    margin-left: 0.2em;
 }
 
 .headerblue .weatherblue .day {
     position: absolute;
-    font-size: 38px;
+    font-size: 0.3em;
     font-weight: 30;
     text-transform: uppercase;
-    margin-left: 20px;
-    margin-top: 50px;
+    margin-left: 0.8em;
+    margin-top: 0.8em;
     
 }
 
 .headerblue .weatherblue {
  position: absolute;
- font-size: 150px;
+ font-size: 8em;
  left: 0;
  top: 0;
- margin-left: -450px;
- margin-top: 200px;
+ margin-left: -0.5em;
+ margin-top: 1.5em;
  bottom: 5px;
  text-shadow: none;
  opacity: 1;
