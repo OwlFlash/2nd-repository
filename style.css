@@ -367,7 +367,7 @@ li{
     width: 100%;
     margin-top: -0.5em;
     display: block;
-    font-size: 5vh;
+    font-size: 2.5em;
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -389,11 +389,11 @@ li{
 
 .headerblue .tempblue {
      position: absolute;
-     font-size: 0.4em;
+     font-size: 1.3em;
      font-weight: 30;
      text-transform: uppercase;
-     margin-left: 6em;
-     margin-top: 1em;
+     margin-left: 8em;
+     margin-top: 0.5em;
 }
 
 .headerblue .tempblue .unitblue {
@@ -406,14 +406,13 @@ li{
 
 .headerblue .weatherblue >.wi {
     position: relative;
-    top: -25px;
 }
 
 .headerblue .weatherblue .wind-scale {
     position: absolute;
-    font-size: 40px;
+    font-size: 0.5em;
     font-weight: 200; 
-    margin-left: -12em;
+    margin-left: 1em;
     text-align: center;
     text-shadow: none;
     text-transform: uppercase;
@@ -422,15 +421,12 @@ li{
 .headerblue .weatherblue .wind .wi,
 .headerblue .weatherblue .wind-scale .wi {
     position: relative;
-    font-size: 48px;
-    margin-left: 0.2em;
 }
 
-.headerblue .weatherblue .day {
+.headerblue .weatherblue .dayblue {
     position: absolute;
     font-size: 0.3em;
     font-weight: 200;
-    margin-left: 2.5em;
     text-align: center;
     text-shadow: none;
     text-transform: uppercase;
@@ -439,10 +435,9 @@ li{
 
 .headerblue .weatherblue {
  position: absolute;
- font-size: 12em;
+ font-size: 5em;
  left: 0;
  top: 0;
- margin-left: -1vh;
  margin-top: 25vh;
  bottom: 5px;
  text-shadow: none;
@@ -452,4 +447,27 @@ li{
 .headerblue:before,
 .headerblue:after {
     position: absolute;
+}
+
+.todaywind {
+    position: absolute;
+    margin-left: 2em;
+}
+
+.todaywindscale {
+    position: absolute;
+    margin-top: 1.6em;
+    margin-left: 2.5em;
+}
+
+.todayraindrop {
+    position: absolute;
+    margin-top: 3.2em;
+    margin-left: 2em;
+}
+
+.dateblue {
+    position: absolute;
+    margin-top: -0.5em;
+    margin-left: 10em;
 }
