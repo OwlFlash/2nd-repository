@@ -139,9 +139,28 @@ function showPosition(position) {
         fahrenheitDecimal =data.list[36].main.temp;
         fahrenheit =Math.round(fahrenheitDecimal*(9/5)-459.67)+" °F";
         fahrenheitHT=document.getElementById("fahrenheit-five").innerHTML=fahrenheit;
+        //Waldemar Wojtas part
+        
+         document.getElementById("todaytemp").innerHTML = Math.round(data.list[0].main.temp - 272.15) + " °C";
+         document.getElementById("winddeg").innerHTML = Math.round(data.list[0].wind.deg);
+         document.getElementById("windscale").innerHTML = Math.round(data.list[0].wind.speed);
+         document.getElementById("raindrops").innerHTML = Math.round(data.list[0].main.pressure);
+         document.getElementById('todaydate').innerHTML = data.list[0].dt_txt.slice(0, 11);
+        
     })
-    
 }
+function getDayOfTheWeek() {
+    let date = new Date();
+    let weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    return weekday[date.getDay()];
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById("weekday").innerHTML = getDayOfTheWeek();
+},false);
+
 
 
 
