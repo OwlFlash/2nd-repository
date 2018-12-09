@@ -310,6 +310,11 @@ li{
 .days :nth-child(1) :nth-child(2){
     border:none;
 }
+.day-icon-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
 .navbar {
     background-color: #333;
@@ -457,7 +462,7 @@ li{
 
 .todayraindrop {
     position: absolute;
-    margin-top: 3em;
+    margin-top: 3.2em;
     margin-left: 2em;
 }
 
