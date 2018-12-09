@@ -1,25 +1,3 @@
-let weather = 'sun';
-
-function rain() {
-    document.getElementsByTagName("H3")[0].setAttribute("class", "rain");
-}
-
-function snow() {
-    document.getElementsByTagName("H3")[0].setAttribute("class", "snow");
-}
-
-function sun() {
-    document.getElementsByTagName("H3")[0].setAttribute("class", "sun");
-}
-
-if(weather == "rain") {
-    rain();
-} else if(weather == "sun") {
-    sun();
-} else if(weather == "snow") {
-    snow();
-} 
-
 // Obsluga ikonki help
 const icon_help = document.getElementById('help-icon');
 icon_help.addEventListener('click', () => {
@@ -44,12 +22,32 @@ function showPosition(position) {
     userCoordinates.longitude = position.coords.longitude;
     console.log(userCoordinates.latitude);
     console.log(userCoordinates.longitude);
-    
-    
+
     fetch('https://api.openweathermap.org/data/2.5/weather?lat='+userCoordinates.latitude+'&lon='+userCoordinates.longitude+'139&appid=558f7f27fa8c91374fcf614b78a0c35f')
     .then((res) => res.json())
     .then((data)=>{
         console.log(data);
+        console.log(data.weather[0].main)
+        var currentWeather = data.weather[0].main;
+
+        function rain() {
+            document.getElementsByTagName("H3")[0].setAttribute("class", "rain");
+        }
+        function snow() {
+            document.getElementsByTagName("H3")[0].setAttribute("class", "snow");
+        }
+        function sun() {
+            document.getElementsByTagName("H3")[0].setAttribute("class", "sun");
+        }
+        if (currentWeather == "Rain") {
+            rain();
+        } else if (currentWeather == "Sun") {
+            sun();
+        } else if (currentWeather == "Snow") {
+            snow();
+        } else {
+            rain();
+        }
     })
         
     fetch('https://api.openweathermap.org/data/2.5/forecast?lat='+userCoordinates.latitude+'&lon='+userCoordinates.longitude+'&appid=558f7f27fa8c91374fcf614b78a0c35f')
