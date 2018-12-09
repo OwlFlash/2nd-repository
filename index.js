@@ -71,6 +71,24 @@ function showPosition(position) {
         var fahrenheitDecimal =data.list[4].main.temp;
         var fahrenheit =Math.round(fahrenheitDecimal*(9/5)-459.67)+" °F";
         var fahrenheitHT=document.getElementById("fahrenheit-one").innerHTML=fahrenheit;
+
+        // Obiekt trzymajacy source icon
+        const weatherIcon = {
+            sun: "public/weather-icons/sunny.png",
+            rain: "public/weather-icons/rain.png",
+            snow: "public/weather-icons/snow.png",
+            storm: "public/weather-icons/thunder.png",
+            clouds_sun: "public/weather-icons/clouds-and-sun.png",
+            clouds: "public/weather-icons/clouds.png"
+        }
+        // Odnosniki do dni
+        const icon_days = {
+            one: document.getElementById("day-1"),
+            two: document.getElementById("day-2"),
+            three: document.getElementById("day-3"),
+            four: document.getElementById("day-4"),
+            five: document.getElementById("day-5")
+        };
         
         daydate = data.list[12].dt_txt.slice(0,11);
         dayname=document.getElementById('day-two').innerHTML=daydate;
@@ -139,6 +157,43 @@ function showPosition(position) {
         fahrenheitDecimal =data.list[36].main.temp;
         fahrenheit =Math.round(fahrenheitDecimal*(9/5)-459.67)+" °F";
         fahrenheitHT=document.getElementById("fahrenheit-five").innerHTML=fahrenheit;
+
+        // Funkcja zwracajaca source pogody na podstawie odpowiedzi ID pogody
+        function chooseWeather(weatherID) {
+            switch (true) {
+                case (weatherID <= 232):
+                    return weatherIcon.storm;
+                    break;
+                case (weatherID <= 531 && weatherID > 232):
+                    return weatherIcon.rain;
+                    break;
+                case (weatherID <= 622 && weatherID > 531):
+                    return weatherIcon.snow;
+                    break;
+                case (weatherID == 800):
+                    return weatherIcon.sun
+                    break;
+                case (weatherID <= 804 && weatherID > 801):
+                    return weatherIcon.clouds;
+                    break;
+                case (weatherID == 801):
+                    return weatherIcon.clouds_sun;
+                    break;
+
+            }
+        }
+
+        // Funkcja zmieniajaca icony 
+        function showIcons() {
+            icon_days.one.innerHTML = `<img src="${chooseWeather(data.list[4].weather[0].id)}" />`;
+            icon_days.two.innerHTML = `<img src="${chooseWeather(data.list[12].weather[0].id)}" />`;
+            icon_days.three.innerHTML = `<img src="${chooseWeather(data.list[20].weather[0].id)}" />`;
+            icon_days.four.innerHTML = `<img src="${chooseWeather(data.list[28].weather[0].id)}" />`;
+            icon_days.five.innerHTML = `<img src="${chooseWeather(data.list[36].weather[0].id)}" />`;
+
+        }
+        // Wywolanie funkcji
+        showIcons();
     })
     
 }
