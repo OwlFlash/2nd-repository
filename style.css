@@ -247,7 +247,7 @@ body {
 .day-temperature .celsius,.fahrenheit{
     width: 25%;
     height: 80%;
-    min-width: 50px;
+    min-width: 70px;
 }
 
 
